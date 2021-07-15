@@ -1,0 +1,122 @@
+/* h1 {
+    color: blue;
+} */
+
+body{
+    color: #333333;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* max-width: 650px; */
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    /* position: absolute;
+    bottom: 0; */
+    color: #888888;
+    border-top: 1px solid #dddddd;
+    /* margin-top: 16px; */
+    padding: 5px;
+    width: 98vw;
+    text-align: center;
+}
+
+header{
+    /* margin-bottom: 43px; */
+    padding: 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: #888888;
+    margin-right: 20px;
+}
+
+.clock{
+    width: 550px;
+}
+
+.main-content{
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url('../images/bg.jpg');
+    width: 96.5vw;
+    height:100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 800px;
+    margin-right: 50px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+.search-container{
+    background: #fff;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(0,0,0,0.125);
+    padding: 5px 20px;
+    /* width:800px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* margin-right: 40px; */
+    transition: 0.8s;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
+              -4px -4px 6px rgba(116, 125, 136, .2);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+.search-container:hover > .search-input{
+    width: 75%;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 150px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+p{
+    font-size: 30px;
+}

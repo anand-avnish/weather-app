@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Weather</title>
+</head>
+<body>
+        {{>header}}
+
+    <div class="main-content">
+
+        <form>
+            <div class="search-container">
+                <input type="text" name="search" placeholder="Search Location" class="search-input">
+                <img src="images/search.png" alt="search icon" style="width: 40px;">  
+                <button>Search</button>
+            </div>
+            {{!-- <img src="images/search.png" alt="search icon" style="width: 30px;padding-top:10px;">
+            <input type="text" placeholder="Location"> --}}
+        </form>
+
+        <p id="error" style="color: red;"></p>
+        <p id="data"></p>
+
+        <div class="location">
+            <img src="images/placeholder.png" alt="search icon" style="width: 40px;">
+            <p id="location"></p>
+        </div>
+
+        <div class="condition">
+            <img src="images/weather.png" alt="search icon" style="width: 40px;">
+            <p id="condition"></p>
+        </div>
+
+        <div class="temp-c">
+            <img src="images/celsius.png" alt="search icon" style="width: 40px;">  
+            <p id="celsius"></p>
+        </div>
+
+        <div class="temp-f">
+            <img src="images/fahrenheit.png" alt="search icon" style="width: 40px;">  
+            <p id="fahrenheit"></p>
+        </div>
+
+        <div class="rainPercentage">
+            <img src="images/umbrella.png" alt="search icon" style="width: 40px;">  
+            <p id="rainPercentage"></p>
+        </div>
+
+        <div class="rain">
+            <img src="images/rain.png" alt="search icon" style="width: 40px;">  
+            <p id="rain"></p>
+        </div>
+        
+        <div class="humidity">
+            <img src="images/humidity.png" alt="search icon" style="width: 40px;">  
+            <p id="humidity"></p>
+        </div>
+        
+        <div class="windSpeed">
+            <img src="images/wind.png" alt="search icon" style="width: 40px;">  
+            <p id="wind"></p>
+        </div>
+        
+        <div class="windDirection">
+            <img src="images/wind-direction.png" alt="search icon" style="width: 40px;">  
+            <p id="direction"></p>
+        </div>
+        
+        <div class="snowChance">
+            <img src="images/snowflake.png" alt="search icon" style="width: 40px;">  
+            <p id="snowChance"></p>
+        </div>
+
+    </div>
+    {{>footer}}
+
+    <script src="js/app.js"></script>
+</body>
+</html>
