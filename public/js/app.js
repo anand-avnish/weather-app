@@ -32,6 +32,16 @@ weatherForm.addEventListener('submit', (event) => {
             if(data.error) {
                 messageOne.textContent = data.error
                 messageTwo.textContent = ''
+                address.textContent = ''
+                condition.textContent = ''
+                celsius.textContent = ''
+                fahrenheit.textContent = ''
+                rainPercentage.textContent = ''
+                rain.textContent = ''
+                humidity.textContent = ''
+                wind.textContent = ''
+                direction.textContent = ''
+                snowChance.textContent = ''
                 console.log(data.error)
             }else{
                 const forecast = data.forecast.forecastData
