@@ -4,6 +4,8 @@ const hbs = require('hbs')
 
 const app = express()
 
+const port = process.env.PORT || 5000
+
 // setup geocode and forecast 
 const geoCode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
@@ -103,6 +105,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(5000 , () => {
-    console.log('Server is listening on port 5000.....')
+app.listen(port , () => {
+    console.log('Server is listening on port '+port)
 })
